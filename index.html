@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drag-Drop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Drag-Drop</h1>
+  </header>
+
+  <main>
+    <section class="toolbox">
+      <h2>Elements</h2>
+      <div draggable="true" class="tool" data-type="text">Text</div>
+      <div draggable="true" class="tool" data-type="image">Image</div>
+      <div draggable="true" class="tool" data-type="button">Button</div>
+    </section>
+
+    <section id="canvas" class="canvas">
+      <p class="placeholder">🡇 Drag elements here to build your website 🡇</p>
+    </section>
+
+    <section class="properties">
+      <h2>Edit Properties</h2>
+      <form id="property-form">
+        <label>Text / Label
+          <input type="text" id="prop-text" />
+        </label>
+        <label>Font Size (px)
+          <input type="number" id="prop-font-size" min="8" />
+        </label>
+        <label>Text / Button Color
+          <input type="color" id="prop-color" />
+        </label>
+        <label>Image URL
+          <input type="text" id="prop-image-url" />
+        </label>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
